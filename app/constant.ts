@@ -86,7 +86,7 @@ export const Anthropic = {
 };
 
 export const OpenaiPath = {
-  ChatPath: "v1/chat/completions",
+  ChatPath: "chat/completions",
   UsagePath: "dashboard/billing/usage",
   SubsPath: "dashboard/billing/subscription",
   ListModelPath: "v1/models",
