@@ -93,7 +93,9 @@ export class ChatGPTApi implements LLMApi {
     }
 
     console.log("[Proxy Endpoint] ", baseUrl, path);
-
+    if (baseUrl.includes("novita")) {
+      path = "chat/completions"
+    }
     return [baseUrl, path].join("/");
   }
 
