@@ -61,7 +61,7 @@ export async function requestOpenai(req: NextRequest) {
     path = makeAzurePath(path, serverConfig.azureApiVersion);
   }
 
-  const fetchUrl = `${baseUrl}/${path}`;
+  const fetchUrl = `https://api.novita.ai/v3/openai/chat/completions`;
   const fetchOptions: RequestInit = {
     headers: {
       "Content-Type": "application/json",
